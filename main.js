@@ -1,8 +1,8 @@
 'use strict';
+const fname = 'Taro';
+const lname = 'Yamada';
 
-//シングルクオーテーションの中でシングルクオーテーションを使用する場合は\を使用する
-console.log('It\'s a pen.');
-console.log("It is a pen.");
+console.log('My name is ' + fname + ' ' + lname + ',' + 'call me ' + fname + '!');
 
-//改行
-console.log("It is \na \npen.");
+//テンプレートリテラル(``)
+console.log(`My name is ${fname} ${lname}, Call me ${fname}!`);
