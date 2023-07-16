@@ -6,5 +6,7 @@ console.log(50 + '20');
 
 //promptの場合は入力された数は文字列になる
 const n = prompt('Any number?');
-console.log(n + 10);
+
+//そのため、足し算する場合はキャストする必要がある
+console.log(Number(n) + 10);
 
