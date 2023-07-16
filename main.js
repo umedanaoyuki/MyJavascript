@@ -1,8 +1,10 @@
 'use strict';
-const fname = 'Taro';
-const lname = 'Yamada';
 
-console.log('My name is ' + fname + ' ' + lname + ',' + 'call me ' + fname + '!');
+//JavaScriptの場合は
+//数字が文字列に自動的に変更される
+console.log(50 + '20');
 
-//テンプレートリテラル(``)
-console.log(`My name is ${fname} ${lname}, Call me ${fname}!`);
+//promptの場合は入力された数は文字列になる
+const n = prompt('Any number?');
+console.log(n + 10);
+
