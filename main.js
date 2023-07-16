@@ -1,9 +1,20 @@
 'use strict';
 
-console.log(100);
-console.log(-10);
-console.log(2.5);
+// console.log(150 * 120 * 1.1);
+// console.log(150 * 130 * 1.1);
+// console.log(150 * 140 * 1.1);
 
-//10の4乗
-console.log(1.2e4);
-console.log(1.2e-4);
+//定数 const
+//変数 let
+let price;
+const rate = 1.1;
+
+price = 150;
+console.log(price * 120 * rate);
+console.log(price * 130 * rate);
+console.log(price * 140 * rate);
+
+price = 160;
+console.log(price * 120 * rate);
+console.log(price * 130 * rate);
+console.log(price * 140 * rate);
