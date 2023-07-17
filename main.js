@@ -1,14 +1,22 @@
 "use strict";
 
-//JavaScriptの場合は
-//数字が文字列に自動的に変更される
-console.log(50 + "20");
+const color = prompt("Color?");
 
-//promptの場合は入力された数は文字列になる
-const score = Number(prompt("Any number?"));
+switch (color) {
+  case "red":
+    console.log("Stop!");
+    break;
 
-if (score >= 90) {
-  console.log("A!");
-} else {
-  console.log("not A!");
+  case "yello":
+    console.log("Slow down");
+    break;
+
+  case "blue":
+  case "green":
+    console.log("Go!");
+    break;
+
+  default:
+    console.log("wrong color");
+    break;
 }
