@@ -1,11 +1,21 @@
 "use strict";
 
 {
+//   function sum(num1, num2) {
+//     return num1 + num2;
+//   }
 
-function double(num) { //仮引数
-  return num * 2;
+
+// console.log(sum(300,700));
+
+
+
+function sum(num1, num2) {
+  console.log(num1 + num2);
 }
 
-  console.log(double(10)); //実引数
-  console.log(double(4) * 3);
+sum(300,700);
+
+
+
 }
