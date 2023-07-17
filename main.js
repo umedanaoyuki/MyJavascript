@@ -2,29 +2,25 @@
 
 {
 
+  const double = (num) => {
+    return num * 2;
+  };
 
-  // //関数宣言
-  //  function double(num) {
-  //    return num * 2;
-  //  }
+  // 仮引数にfuncという引数の関数を入力している（つまりnumをインプットすると
+  // 何かしらの処理を自動的にしてくれるcalc関数を定義してくれている）
+  const calc = (num, func) => {
+    return func(num);
+  };
+
+  //今回　上で定義した仮引数の関数に対して doubleを指定している
+  // double()にしない
+  // console.log(calc(20, double));
+
+  //わざわざアロー関数を書かずに、直接この中にアロー関数を書くことができる
+  console.log(calc(20, (num) => {
+    return num * 2;
+  }));
 
 
-//   関数式（無名関数）
-// const double = function(num) {
-//     return num * 2;
-//   };
-
-//アロー関数式
-// const double = (num) => {
-//   return num * 2;
-// };
-
-//仮引数が1つの場合は（）はいらない　
-//また、{}やreturnもいらない
-const double = num => num * 2;
-
-  //  console.log(double(30));
-
-  console.log(double(30));
 
 }
