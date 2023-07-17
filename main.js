@@ -1,21 +1,16 @@
 "use strict";
 
 {
-  //引数のデフォルト値
-  function calculateTotal(price, amount, rate = 1.1) {
-    // if (amount >= 100) {
-    //   return price * amount * 1;
-    // } else {
-    //   return price * amount * rate;
-    // }
-
-    //早期リターン
-    if (amount >= 100) {
-      return price * amount * 1;
-    } 
-      return price * amount * rate;
+  function double(num) {
+    return num * 2;
   }
 
-  console.log(calculateTotal(100, 100));
-  console.log(calculateTotal(1000, 10));
+  function triple(num) {
+    return num * 3;
+  }
+
+  console.log(double(20));
+  // console.log(num);
+  console.log(triple(20));
+
 }
