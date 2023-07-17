@@ -1,11 +1,10 @@
 "use strict";
 
-const english = Number(prompt('English?'));
+let x = 10;
 
-const math = Number(prompt('Math?'));
-
-if (!(english > 80 && math > 80)) {
-  console.log('B');
-} else {
-  console.log('A');
+{
+x = 20;
+console.log(x);
 }
+
+console.log(x);
