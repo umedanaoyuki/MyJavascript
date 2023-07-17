@@ -1,15 +1,21 @@
 "use strict";
 
-//let command = Number(prompt("Menu 1,2,3 or 0 to exit"));
+let amount = 100;
 
-let command;
+for (let year = 1; year <= 30; year++) {
+  amount = amount * 1.05;
 
-do {
-  command = Number(prompt("Menu 1,2,3 or 0 to exit"));
-  console.log(`Menu ${command} processed.`);
-  if (command == 0) {
-    console.log('終了');
+  if (amount < 200) {
+    continue;
+    //これ以降の処理は実施されないのでconsolo.logの中身が表示されず
+    //今回のコードの場合は、200より少ない場合のconsole.logは表示されず
+    //300より上のamountも表示されない
   }
+  if (amount > 300) {
+    break;
+  }
+  console.log(`Year ${year}: ${amount}`);
+}
 
-} while (command !== 0);
+
   
