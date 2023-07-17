@@ -1,8 +1,11 @@
 "use strict";
 
-const score = Number(prompt('Score?'));
+const english = Number(prompt('English?'));
 
-// 条件演算子
-const result = score > 80 ? 'A' : 'B';
-console.log(result);
+const math = Number(prompt('Math?'));
 
+if (!(english > 80 && math > 80)) {
+  console.log('B');
+} else {
+  console.log('A');
+}
