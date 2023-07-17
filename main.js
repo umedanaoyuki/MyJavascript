@@ -1,20 +1,17 @@
 "use strict";
 
 {
-  function sum(num1, num2) {
-    return num1 + num2;
+  //引数のデフォルト値
+  function calculateTotal(price, amount, rate = 1.1) {
+    return price * amount * rate;
   }
 
-  // console.log(sum(300,700));
 
-  // function sum(num1, num2) {
-  //   console.log(num1 + num2);
-  //   //リターンを書かない場合は undefinedになっている
-  //   // return undefined;
-  // }
+  console.log(calculateTotal(100, 10));
+  console.log(calculateTotal(150, 10));
+  console.log(calculateTotal(200, 10));
+  console.log(calculateTotal(200, 10, 1.08));
 
-  //undefinedが表示されるはず
-  // console.log(sum(300,700));
 
-  console.log(sum(300, 700) * 3);
+
 }
