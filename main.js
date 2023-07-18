@@ -1,15 +1,18 @@
 "use strict";
 
 {
-  const socres = [
+  const scores = [
     70,90,80,85
   ];
 
-  
-  //scoresは仮引数
-  //配列の中には、値の後にindexがデフォルトで入っている
-  socres.forEach((score, index) => {
-    console.log(`${index}: ${score}`);
+  let sum = 0;
+
+  scores.forEach((score, index) => {
+    sum += score;
   });
 
+  console.log(`Sum: ${sum}`);
+
+
+ 
 }
