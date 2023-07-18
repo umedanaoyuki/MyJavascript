@@ -2,18 +2,22 @@
 
 {
 
-  const names = ['Taro', 'Jiro', 'Saburo'];
+  const prices = [100, 150, 200];
 
-  console.log(names.join('|'));
 
-  //カンマでつなげる
-console.log(names.join(''));
-  
-//そのまま繋げる
-console.log(names.join());
+  //const pricesWithTax = [];
+  // prices.forEach((price) => {
+  //     pricesWithTax.push(price * 1.1);
+  // });
 
-const array = 'Taro|Jiro|Saburo';
-console.log(array.split('|'));
+  //console.log(prices);
 
+
+  //返り値を入れて配列にする
+  const pricesWithTax =  prices.map((price) => {
+    return price * 1.1;
+  }); 
+
+  console.log(pricesWithTax);
 
 }
