@@ -5,15 +5,11 @@
     70,90,80,85
   ];
 
-  socres.push(77,88);
-
-
-  for (let i = 0; i < socres.length; i++){
-    console.log(socres[i]);
-  }
-
-
-
-
+  
+  //scoresは仮引数
+  //配列の中には、値の後にindexがデフォルトで入っている
+  socres.forEach((score, index) => {
+    console.log(`${index}: ${score}`);
+  });
 
 }
