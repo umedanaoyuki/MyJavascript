@@ -8,20 +8,12 @@
     english: 90
   }
 
-  //オブジェクトの出力
- console.log(scores);
 
- //出力の仕方は変わらないので簡単な下の方を使用する
-console.log(scores['english']);
-console.log(scores.english);
+  scores.physics = 70;
+  console.log(scores);
 
-//要素の変更
-scores.math = 88;
-console.log(scores.math);
-
-
-
-
+  delete scores.english;
+  console.log(scores);
 
 
 }
