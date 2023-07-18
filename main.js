@@ -6,6 +6,12 @@
   ]
 
 
+  console.log(socres[2]);
+  console.log(socres.length);
+  socres[1] = 95;
   console.log(socres);
+
+
+
 
 }
