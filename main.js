@@ -1,18 +1,27 @@
 "use strict";
 
+//オブジェクトの宣言
 {
-  const scores = [
-    70,90,80,85
-  ];
 
-  let sum = 0;
+  const scores = {
+    math: 80,
+    english: 90
+  }
 
-  scores.forEach((score, index) => {
-    sum += score;
-  });
+  //オブジェクトの出力
+ console.log(scores);
 
-  console.log(`Sum: ${sum}`);
+ //出力の仕方は変わらないので簡単な下の方を使用する
+console.log(scores['english']);
+console.log(scores.english);
+
+//要素の変更
+scores.math = 88;
+console.log(scores.math);
 
 
- 
+
+
+
+
 }
