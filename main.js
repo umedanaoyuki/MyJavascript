@@ -3,13 +3,15 @@
 {
   const socres = [
     70,90,80,85
-  ]
+  ];
+
+  socres.push(77,88);
 
 
-  console.log(socres[2]);
-  console.log(socres.length);
-  socres[1] = 95;
-  console.log(socres);
+  for (let i = 0; i < socres.length; i++){
+    console.log(socres[i]);
+  }
+
 
 
 
