@@ -4,20 +4,18 @@
 
   const prices = [100, 150, 200];
 
+  // const priceOver150 = [];
 
-  //const pricesWithTax = [];
   // prices.forEach((price) => {
-  //     pricesWithTax.push(price * 1.1);
-  // });
+  //   if (price >= 150) {
+  //     priceOver150.push(price);
+  //   }
+  // })
 
-  //console.log(prices);
+const priceOver150 = prices.filter((price) => {
+      return price >= 150;
+  });
 
-
-  //返り値を入れて配列にする
-  const pricesWithTax =  prices.map((price) => {
-    return price * 1.1;
-  }); 
-
-  console.log(pricesWithTax);
+  console.log(priceOver150);
 
 }
