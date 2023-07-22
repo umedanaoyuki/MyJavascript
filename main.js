@@ -1,15 +1,19 @@
 "use strict";
 
 {
-  const scores = [70,90,80,85];
+  let start = 'Tokyo';
+  let goal = 'Osaka';
 
+  // start = goal;
+  // goal = start;
+
+  // console.log(start);
+  // console.log(goal);
+  
   //分割代入
-  const [first, second, thrid, fourth] = scores;
+[goal, start] = [start, goal];
 
-  console.log(first);
-  console.log(second);
-  console.log(thrid);
-  console.log(fourth);
-
+console.log(start);
+console.log(goal);
 
 }
