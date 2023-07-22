@@ -1,21 +1,15 @@
 "use strict";
 
 {
+  const scores = [70,90,80,85];
 
-  const prices = [100, 150, 200];
+  //分割代入
+  const [first, second, thrid, fourth] = scores;
 
-  // const priceOver150 = [];
+  console.log(first);
+  console.log(second);
+  console.log(thrid);
+  console.log(fourth);
 
-  // prices.forEach((price) => {
-  //   if (price >= 150) {
-  //     priceOver150.push(price);
-  //   }
-  // })
-
-const priceOver150 = prices.filter((price) => {
-      return price >= 150;
-  });
-
-  console.log(priceOver150);
 
 }
