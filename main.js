@@ -4,17 +4,13 @@
 
   const prices = [100, 150, 200];
 
-  // const pricesWithTax = [];
-
-  // prices.forEach((price) => {
-  //   pricesWithTax.push(price * 1.1);
-  // });
-
-  const pricesWithTax = 
-  prices.map((price) => {
-    return price * 1.1;
+  const array =
+  prices.filter((price) => {
+    return price >= 150;
   });
 
-  console.log(pricesWithTax);
+  console.log(array);
+
+
 
 }
