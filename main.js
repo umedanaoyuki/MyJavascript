@@ -2,14 +2,22 @@
 
 {
 
-  const moreSores = [77,88];
-  //スプレッド構文でmoreSoresに入れる
-  const scores = [70, 80, 90, 85, ...moreSores];
+  const moreSores = {
+    shir
+  }
 
-  //レスト構文
-  const [first, ...others] = scores;
 
-  console.log(first);
+  const scores = {
+    taro: 80,
+    jiro: 70,
+    saburo: 90,
+  };
+
+  //オブジェクトの分割代入の場合は｛｝を使う
+  const {taro, ...others} = scores;
+  console.log(taro);
   console.log(others);
+
+
 
 }
