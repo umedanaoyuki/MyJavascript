@@ -12,7 +12,8 @@
   // console.log(numBackup);
 
   const nums = [10, 20, 30];
-  const numsBackup = nums;
+  //スプレッド構文を使用すればnumsとnumsBackupを別にできる
+  const numsBackup = [...nums];
 
   nums[0] = 99;
 
