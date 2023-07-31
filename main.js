@@ -2,14 +2,28 @@
 
 {
 
- const moreSocres = [77, 88];
- //この書き方で配列をつなげる（スプレッド構文（右辺））
- const socres = [70, 90, 80, 85, ...moreSocres];
- //レスト構文（左辺）
- const [first, ...others]= socres;
+  const moreScores = {
+    shiro: 77,
+    goro: 88,
+  }
 
- console.log(first);
- console.log(others);
- 
+
+  const scores = {
+    taro: 80,
+    jiro: 70,
+    saburo: 90,
+    ...moreScores
+  };
+
+  // const {
+  //   taro, jiro, saburo
+  // } = scores;
+
+  const {taro, ...others} = scores
+
+  console.log(taro);
+  // console.log(jiro);
+  // console.log(saburo); 
+  console.log(others);
 
 }
