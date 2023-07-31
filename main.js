@@ -2,22 +2,20 @@
 
 {
 
-  const moreSores = {
-    shir
-  }
+  const scores = [70, 90, 80, 85];
 
+  scores.splice(2, 0, 77, 88);
+  // 70, 90, 77, 88, 80, 85
 
-  const scores = {
-    taro: 80,
-    jiro: 70,
-    saburo: 90,
-  };
+  //console.log(scores);
+  const deleted = scores.splice(3,1);
+  // 70, 90, 77, 80, 85
+  // deleted = [88] deleted が88が1つだけ入った配列
 
-  //オブジェクトの分割代入の場合は｛｝を使う
-  const {taro, ...others} = scores;
-  console.log(taro);
-  console.log(others);
+  scores.splice(2,2,30);
+  // 70, 90, 30, 85
 
-
+  console.log(scores);
+  console.log(deleted);
 
 }
