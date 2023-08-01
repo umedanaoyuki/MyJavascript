@@ -2,18 +2,17 @@
 
 {
 
-  const emails = [
-    'taro@example.com',
-    'kintaro@example.com',
-    'kojiro@example.com',
-  ];
+  const counts = [6, 12, 8,15];
 
-  emails.forEach((email) => {
-     //console.log(email.replace('@example.com', ''));
+  counts.forEach((count) => {
+      let bar = '';
+      for (let i = 0; i < count; i++) {
+        bar = bar + '*';
+      }
 
-     //splitで配列に入れて配列の0番を出力する
-    const items = email.split('@');
-    console.log(items[0]);
-
+      console.log(bar);
   });
+
+  
+
 }
