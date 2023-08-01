@@ -12,7 +12,7 @@
      const loc = email.indexOf('@');
 
     //@が出現する位置を割り出してその文字まで
-    console.log(email.slice(0,loc));
+    console.log(email.substring(0,loc));
 
   });
 }
