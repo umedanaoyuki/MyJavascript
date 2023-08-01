@@ -2,18 +2,20 @@
 
 {
 
-  function getRamdomInteger(max) {
-    return Math.floor(Math.random() * (max + 1));
-  }
+  const scores = [70, 90, 80, 75];
 
-  for (let i = 0; i < 10; i++) {
-    //乱数を生成(0以上1未満)
-    // const n = Math.random();
+  //最大値を出力
+  // console.log(Math.max(...scores));
 
-    //1から6のランダムな整数（サイコロ）を出力
-    const n = getRamdomInteger(5) + 1;
-    console.log(`${i}: ${(n)}`);
-  }
-  
+  //forEachを使用すればこのような書き方
+  let max = 0;
+  scores.forEach((score) => 
+  {
+    if (score > max) {
+      max = score;
+    }
+  });
+
+  console.log(max);
 
 }
