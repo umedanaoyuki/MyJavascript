@@ -16,7 +16,8 @@
 
   counts.forEach((count) => {
     const bar = '*'.repeat(count);
-    console.log(bar);
+    const label = String(count).padStart(2, ' ');
+    console.log(`${label}: ${bar}`);
   });
 
   
