@@ -2,16 +2,15 @@
 
 {
 
- const d = new Date();
- console.log(d);
- console.log(d.toLocaleString());
- console.log(d.getFullYear());
- console.log(d.getMonth()); // 0, 1, 2, 3.....
- console.log(d.getDate());
- console.log(d.getHours());
- console.log(d.getMinutes());
- console.log(d.getSeconds());
- console.log(d.getMilliseconds());
- console.log(d.getDay()); // 0,1,2,3.....
+  // 2000 4 11
+ //const d = new Date(2000,3,11);
+ 
+ // 2000 2 末日？？？？？
+ //3月0日（2月末日）を表示させることで、閏年を調べなくてもいい
+ const d = new Date(2000, 2, 0);
+
+ console.log(d.toLocaleDateString());
+
+
 
 }
