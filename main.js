@@ -9,10 +9,11 @@
   ];
 
   emails.forEach((email) => {
-     const loc = email.indexOf('@');
+     //console.log(email.replace('@example.com', ''));
 
-    //@が出現する位置を割り出してその文字まで
-    console.log(email.substring(0,loc));
+     //splitで配列に入れて配列の0番を出力する
+    const items = email.split('@');
+    console.log(items[0]);
 
   });
 }
