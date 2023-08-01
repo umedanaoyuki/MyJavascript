@@ -2,20 +2,10 @@
 
 {
 
-  const scores = [70, 90, 80, 75];
-
-  //最大値を出力
-  // console.log(Math.max(...scores));
-
-  //forEachを使用すればこのような書き方
-  let max = 0;
-  scores.forEach((score) => 
-  {
-    if (score > max) {
-      max = score;
-    }
-  });
-
-  console.log(max);
+  const string = prompt('Any message?');
+  console.log(string);
+  console.log(string.length);
+  //最初の文字を表示
+  console.log(string[0]);
 
 }
