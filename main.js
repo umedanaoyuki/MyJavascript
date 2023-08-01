@@ -2,14 +2,16 @@
 
 {
 
-  const string = prompt('Name?');
+  const emails = [
+    'taro@example.com',
+    'kintaro@example.com',
+    'kojiro@example.com',
+  ];
 
-  //空白を抜く、文字をすべて小文字に変換
-  if (string.toLowerCase().trim() === 'taro') {
-    console.log('correct!');
-  } else {
-    console.log('wrong!')
-  }
+  emails.forEach((email) => {
+      if (email.startsWith('taro') === true) {
+        console.log(email);
+      }
 
-
+  });
 }
