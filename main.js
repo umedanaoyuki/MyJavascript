@@ -2,18 +2,15 @@
 
 {
 
-  let cnout = 3;
-  //1秒後に実施される
-  const intervalId = setInterval(() => {
-    console.log(cnout);
-    cnout--;
+ setTimeout(() => {
+ 
+  // console.log('50% off');
+ window.location.href = 'https://news.yahoo.co.jp/articles/dac9ffe495b325b420c7a515e078ade0f2374a70/comments';
 
-    if (cnout < 0) {
-        clearInterval(intervalId);}
-  }, 1000);
+}, 3000);
 
-  //こちらが先に実行される
-  console.log(`ID: ${intervalId}`);
+console.log('Page loaded');
+
 
 
 }
