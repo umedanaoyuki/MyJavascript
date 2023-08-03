@@ -2,19 +2,12 @@
 
 {
 
-  setTimeout(() => {
-    console.log(new Date());
-    setTimeout(() => {
+  function showclock() {
+    setTimeout( () => {
       console.log(new Date());
-      setTimeout(() => {
-        console.log(new Date());
-      }, 1000)
-    }, 1000);
-  }, 1000);
+      showclock();
+  }, 1000);}
 
-
-
-
-
+  showclock();
 
 }
