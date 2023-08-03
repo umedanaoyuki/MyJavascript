@@ -4,14 +4,11 @@
 
   // 2000 4 11
  const d = new Date(2000, 3, 11);
+console.log(d);
+//1970/1/1からの経過ミリ秒(Unix Time Stamp)
+console.log(d.getTime());
 
-//  const dBackup = new Date(d.getFullYear, d.getMonth, d.getDay);
- const dBackup = new Date(d.getTime());
-d.setDate(23);
-
-// d.setDate(d.getDate() + 100);
- console.log(d.toLocaleDateString());
- console.log(dBackup.toLocaleDateString());
-
+const d2 = new Date(d.getTime() + 1000);
+console.log(d2);
 
 }
