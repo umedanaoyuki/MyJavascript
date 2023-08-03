@@ -7,11 +7,15 @@
   const buttonElement = document.querySelector('button');
 
   buttonElement.addEventListener('click', () => {
-    if (isDevMode) {
-      pElement.textContent = 'Dev Mode is Off';
-    } else {
-      pElement.textContent = 'Dev Mode is On';
-    }
-    isDevMode = !isDevMode;
-  });
+    
+    if (confirm('Are you sure?')) {
+
+      if (isDevMode) {
+
+        pElement.textContent = 'Dev Mode is Off';
+      } else {
+        pElement.textContent = 'Dev Mode is On';
+      }
+      isDevMode = !isDevMode;
+    }});
 }
