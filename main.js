@@ -2,13 +2,11 @@
 
 {
 
-  // 2000 4 11
- const d = new Date(2000, 3, 11);
-console.log(d);
-//1970/1/1からの経過ミリ秒(Unix Time Stamp)
-console.log(d.getTime());
+// 2023/6/10
+// new Date() - new Date(2023, 5, 10);
+const diff = new Date().getTime() - new Date(2023, 5, 10).getTime();
+const days = Math.floor(diff / 1000 / 60 / 60 / 24);
 
-const d2 = new Date(d.getTime() + 1000);
-console.log(d2);
-
+// console.log(diff);
+console.log(days);
 }
