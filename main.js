@@ -4,6 +4,7 @@
 
   const name = prompt('youe name?');
 
+  //空文字はfalse
   if (name) {
     console.log(`Hi, ${name}`);
   } else {
