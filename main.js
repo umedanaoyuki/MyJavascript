@@ -2,11 +2,15 @@
 
 {
 
-// 2023/6/10
-// new Date() - new Date(2023, 5, 10);
-const diff = new Date().getTime() - new Date(2023, 5, 10).getTime();
-const days = Math.floor(diff / 1000 / 60 / 60 / 24);
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const d = new Date(2001, 0, 1);
 
-// console.log(diff);
-console.log(days);
+  // January 01, Monday
+  const month = months[d.getMonth()];
+  const date = String(d.getDate()).padStart(2, '0');
+  const day = days[d.getDay()];
+  console.log(`${month} ${date}, ${day}`);
+
+
 }
