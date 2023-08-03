@@ -8,14 +8,15 @@
 
   buttonElement.addEventListener('click', () => {
     
-    if (confirm('Are you sure?')) {
+    if (confirm('Are you sure?') === false) {
+      return;
+    }
 
       if (isDevMode) {
-
         pElement.textContent = 'Dev Mode is Off';
       } else {
         pElement.textContent = 'Dev Mode is On';
       }
       isDevMode = !isDevMode;
-    }});
+    });
 }
