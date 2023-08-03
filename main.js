@@ -2,21 +2,12 @@
 
 {
 
-  let isDevMode = true;
-  const pElement  = document.querySelector('p');
-  const buttonElement = document.querySelector('button');
+  const name = prompt('youe name?');
 
-  buttonElement.addEventListener('click', () => {
-    
-    if (!confirm('Are you sure?')) {
-      return;
-    }
-
-      if (isDevMode) {
-        pElement.textContent = 'Dev Mode is Off';
-      } else {
-        pElement.textContent = 'Dev Mode is On';
-      }
-      isDevMode = !isDevMode;
-    });
+  if (name) {
+    console.log(`Hi, ${name}`);
+  } else {
+    console.log('no body');
+  }
+ 
 }
