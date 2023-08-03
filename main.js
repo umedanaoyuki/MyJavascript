@@ -8,7 +8,7 @@
 
   buttonElement.addEventListener('click', () => {
     
-    if (confirm('Are you sure?') === false) {
+    if (!confirm('Are you sure?')) {
       return;
     }
 
